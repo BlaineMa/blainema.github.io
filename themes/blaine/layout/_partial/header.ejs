@@ -6,9 +6,9 @@
     <% } %>
   </h2>  
 
-  <nav>
+  <ul>
     <% for (var i in theme.menu){ %>
-      <a href="<%- url_for(theme.menu[i]) %>"><%= i %></a> |
+      <li><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
     <% } %>
-  </nav>
+  </ul>
 </header>

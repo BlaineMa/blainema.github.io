@@ -1,14 +1,11 @@
 # Header
 menu:
-  Category: /category
+  About: /about
 rss: /atom.xml
 
 # Flag
-title: Blaine Ma's <span>Blog</span>
-subtitle: Write down what you learnt
-
-# Content
-excerpt_link: Read More
+title: Blaine Ma<span>'s</span> Blog
+subtitle: Talking abount what I learnt
 
 # Miscellaneous
 favicon: /favicon.png

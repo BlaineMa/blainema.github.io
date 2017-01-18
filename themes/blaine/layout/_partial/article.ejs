@@ -1,32 +1,24 @@
 <article id="<%= post.layout %>-<%= post.slug %>" itemscope itemprop="blogPost">
-  <div class="meta">
-    <p class="date">
-      <%- partial('post/date', {date_format: null}) %>
-      <%- partial('post/category') %>
-    </p>
 
-    <% if (post.link || post.title){ %>
-      <h1>
-        <%- partial('post/title', {class_name: 'article-title'}) %>
-      </h1>
-    <% } %>
+  <h1> <%- partial('post/title', {class_name: 'article-title'}) %> </h1>
 
-    <%- partial('post/gallery') %>
 
-    <p>
-      <% if (post.excerpt && index){ %>
-        <%- post.excerpt %>
-      <% } else { %>
-        <%- post.content %>
-      <% } %>
-    </p>
+  <div class="excerpt"><p><%- post.excerpt %></p></div>  
 
-    <% if (theme.excerpt_link){ %>
-      <p><a href="<%- url_for(post.path) %>#more" class="button"><%= theme.excerpt_link %></a></p>
-    <% } %>
+
+  <div class="toc">
+    <%- toc(post.content, {list_number: false}) %>
   </div>
   
-  <% if (!index){ %>
-    <%- partial('post/nav') %>
-  <% } %>
+  <%- post.more %>
+
+
+  <div class="meta">
+    <%- partial('post/date', {date_format: null}) %>
+    <%- partial('post/tag') %>
+  </div>
+
+
+  <%- partial('post/nav') %>
+
 </article>

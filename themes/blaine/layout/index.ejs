@@ -1,1 +1,11 @@
-<%- partial('_partial/archive', {pagination: 2, index: true}) %>
+<% if (page.posts.length){ %>
+  <% page.posts.each(function(post){ %>
+    <%- partial('_partial/article-excerpt', {post: post, index: true}) %>
+  <% }) %>
+<% } %>
+
+<% if (page.total > 1){ %>
+  <div class="pagination">
+    <%- paginator() %>
+  </div>
+<% } %>

@@ -71,8 +71,9 @@ deploy:
   type:
 
 # Org-Mode
+# http://orgmode.org/manual/Export-settings.html#Export-settings
 org:
-  emacs: '/Applications/Emacs.app/Contents/MacOS/Emacs'
   common: |
-          #+OPTIONS: toc:nil
-  cachedir: './hexo-org-cache/'
+          #+OPTIONS: toc:nil num:2 author:nil creator:nil date:nil timestamp:nil email:nil f:nil
+          #+BIND: org-html-validation-link nil
+
