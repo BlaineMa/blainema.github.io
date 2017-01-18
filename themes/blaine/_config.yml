@@ -1,0 +1,14 @@
+# Header
+menu:
+  Category: /category
+rss: /atom.xml
+
+# Flag
+title: Blaine Ma's <span>Blog</span>
+subtitle: Write down what you learnt
+
+# Content
+excerpt_link: Read More
+
+# Miscellaneous
+favicon: /favicon.png

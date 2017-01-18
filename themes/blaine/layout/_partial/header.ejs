@@ -1,0 +1,14 @@
+<header id="header">
+  <h2>
+    <a href="<%- url_for() %>"><%- theme.title %></a>
+    <% if (theme.subtitle){ %>
+      <div class="subtitle"><%= theme.subtitle %></div>
+    <% } %>
+  </h2>  
+
+  <nav>
+    <% for (var i in theme.menu){ %>
+      <a href="<%- url_for(theme.menu[i]) %>"><%= i %></a> |
+    <% } %>
+  </nav>
+</header>
