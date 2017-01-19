@@ -1,0 +1,21 @@
+#+TITLE: The first post
+#+LAYOUT: post
+#+STARTUP: overview
+
+#+ATTR_HTML: :width 100% :alt FirstPost
+[[http://kingofwallpapers.com/exciting/exciting-005.jpg]]
+
+This is the first post of this blog,
+I will describe that why I'm going to write blog at this time.
+And what content I'm going to delivery in the future.
+And also how I built this blog.
+
+#+BEGIN_HTML
+<!--more-->
+#+END_HTML
+
+* Why I write blog at this time?
+introduce myself
+
+* What kind of blog will it be?
+* How I built it?
