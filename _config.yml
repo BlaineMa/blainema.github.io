@@ -63,13 +63,13 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: blaine
+theme: baineng
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:BlaineMa/blainema.github.io.git
+  repo: git@github.com:baineng/baineng.github.io.git
   branch: master
 
 # Org-Mode
